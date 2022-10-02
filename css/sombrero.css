@@ -273,6 +273,13 @@ header nav select:focus {
         width: fit-content;
         margin: 0 auto;
     }
+    
+    @media (max-width:767px) {
+    header nav li {
+        font-size: 11px;
+        width: fit-content;
+        margin: 0 auto;
+    }
 
     #language {
         font-size: 11px;
