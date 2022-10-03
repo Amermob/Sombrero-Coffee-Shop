@@ -273,13 +273,6 @@ header nav select:focus {
         width: fit-content;
         margin: 0 auto;
     }
-    
-    @media (max-width:767px) {
-    header nav li {
-        font-size: 11px;
-        width: fit-content;
-        margin: 0 auto;
-    }
 
     #language {
         font-size: 11px;
@@ -381,6 +374,29 @@ header nav select:focus {
         background-position: top;
         height: 100vh;
         background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:992px) {
+    .landing .text h2 {
+        font-size: 35px;
+
+    }
+
+    .landing .text h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .landing .text h2 {
+        font-size: 30px;
+
+    }
+
+    .landing .text h3 {
+        font-size: 25px;
+
     }
 }
 
