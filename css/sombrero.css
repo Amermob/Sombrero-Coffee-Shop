@@ -566,6 +566,7 @@ p {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 .coffee label {
@@ -939,6 +940,14 @@ form ::placeholder {
     padding: 60px;
     text-transform: capitalize;
     text-align: center;
+}
+.footer .open {
+    padding: 20px;
+    text-transform: capitalize;
+}
+.footer h3,h4 {
+    margin: 10px 0 10px 0;
+    color: white;
 }
 
 .footer p {
