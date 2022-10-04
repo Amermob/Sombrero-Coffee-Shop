@@ -635,7 +635,7 @@ select {
     font-weight: 900;
     font-size: 12px;
     color: red;
-    margin-left: 5px;
+    margin: 3px 0 0px 5px;
 }
 
 form ::placeholder {
