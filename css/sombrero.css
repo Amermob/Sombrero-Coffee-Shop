@@ -87,11 +87,11 @@ ul li {
     padding-bottom: 100px;
 }
 
+
+
 /* ends components */
 
-
 /* scrolling */
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -110,7 +110,6 @@ ul li {
 }
 
 /* scrolling */
-
 
 
 /* preloader */
@@ -496,6 +495,12 @@ p {
     }
 }
 
+@media (max-width:280px) {
+    .sombrero .card .text p {
+        line-height: 1.4;
+    }
+}
+
 /* who we are media quaries */
 
 
@@ -532,7 +537,6 @@ p {
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    
 }
 
 .coffee img {
@@ -562,7 +566,6 @@ p {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    margin-bottom: 50px;
 }
 
 .coffee label {
@@ -637,7 +640,7 @@ select {
     font-weight: 900;
     font-size: 12px;
     color: red;
-    margin: 3px 0 0px 5px;
+    margin-left: 5px;
 }
 
 form ::placeholder {
