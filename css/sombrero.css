@@ -89,6 +89,29 @@ ul li {
 
 /* ends components */
 
+
+/* scrolling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #a05e2b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* scrolling */
+
+
+
 /* preloader */
 #preloader {
     background-color: var(--main-background-color);
