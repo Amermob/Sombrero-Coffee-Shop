@@ -964,11 +964,11 @@ form ::placeholder {
     overflow: hidden;
 }
 
-/* .footer span {
+.footer span {
     color: white;
     font-size: 20px;
     text-transform: capitalize;
-} */
+}
 
 .footer a i {
     color: white;
