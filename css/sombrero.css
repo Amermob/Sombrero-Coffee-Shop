@@ -56,11 +56,6 @@ ul li {
     font-family: "Permanent Marker", cursive;
 }
 
-@media (max-width:800px) {
-    .main-heading {
-        font-size: 30px;
-    }
-}
 
 .main-heading::before {
     font-family: "font awesome 6 free";
@@ -86,6 +81,26 @@ ul li {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+/* respnsive */
+@media (max-width:1000px) {
+    .main-heading {
+        font-size:40px ;
+    }
+}
+@media (max-width:800px) {
+    .main-heading {
+        font-size:30px ;
+        
+    }
+}
+@media (max-width:767px) {
+    .main-heading {
+        font-size:25px ;
+        
+    }
+}
+/* responsive */
 
 
 
@@ -532,12 +547,19 @@ p {
 
 .coffee form {
     transition: 0.4s;
+    /* opacity: 0; */
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
+
+.coffee .var {
+    height: fit-content;
+}
+
+
 
 .coffee img {
     border-radius: 5px;
@@ -657,7 +679,30 @@ form ::placeholder {
     max-width: 200px;
     padding: 20px;
 }
+.event-w {
+    display: none;
+}
 
+.event-w button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.event-w button:hover {
+    color: white;
+    background-color:#a05e2b;
+}
 /* event media quaries */
 
 @media (max-width:700px) {
@@ -667,6 +712,17 @@ form ::placeholder {
     .coffee .f {
         width: 500px;
     }
+    .coffee .f {
+        display: none;
+    } 
+    .event-w {
+        text-align: center;
+        display: inline-block;
+    }
+    .event-w button {
+        margin: 5px;
+    }
+    
 }
 
 @media (max-width:550px) {
@@ -675,6 +731,9 @@ form ::placeholder {
     .coffee form,
     .coffee .f {
         width: 400px;
+    }
+    form div {
+        display: flex;
     }
 }
 
@@ -726,15 +785,19 @@ form ::placeholder {
 }
 
 /* delivery media quaries */
-
+@media (max-width:1000px) {
+    .delivery .text h2 {
+        font-size: 25px;
+    }
+}
 @media (max-width:750px) {
-    .delivery .text {
+    .delivery .text h2 {
         font-size: 20px;
     }
 }
 
 @media (max-width:500px) {
-    .delivery .text {
+    .delivery .text h2 {
         font-size: 17px;
     }
 }
@@ -762,44 +825,54 @@ form ::placeholder {
     max-width: 300px;
     max-height: 300px;
     object-fit: contain;
-    position: relative;
-    opacity: 0.5;
     padding: 3px;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
 }
 
-.gallery .box video {
-    opacity: 0.5;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-}
 
-.gallery .box img:hover,
-.gallery .box video:hover {
-    opacity: 1;
-    transform: scale(1.2) rotate(5deg);
-    -webkit-transform: scale(1.2) rotate(5deg);
-    -moz-transform: scale(1.2) rotate(5deg);
-    -ms-transform: scale(1.2) rotate(5deg);
-    -o-transform: scale(1.2) rotate(5deg);
-    z-index: 2;
-}
 
 /* gallery************************************************************ */
 
+
+/* servies *********************************************************/
+.servies .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px;
+}
+.servies .content .wifi,.tv,.restroom {
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 50px;
+    max-width: 280px;
+    height: 180px;
+}
+
+
+
+
+.servies .content p {
+    font-size: 20px;
+}
+/* servies ********************************************************/
+
+
 /* find ***************************************************************** start */
+
+.find-us {
+    background-color: #fff;
+}
 
 .location {
     display: flex;
     flex-basis: 60%;
     margin-bottom: 30px;
+
+
 }
 
 .find-us .box {
@@ -883,6 +956,12 @@ form ::placeholder {
         height: 330px;
     }
 }
+@media (max-width: 280px) {
+    .location iframe {
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
 
 .group {
     flex-basis: 30%;
@@ -951,8 +1030,7 @@ form ::placeholder {
 }
 
 .footer p {
-    font-family: "Permanent Marker", cursive;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
 }
 
