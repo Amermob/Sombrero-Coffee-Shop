@@ -7,6 +7,8 @@ window.addEventListener("load", function () {
 });
 // preloader
 
+//  ****************************************************************translations //
+
 // import translations from "./translations.js";
 
 // const languageSelector = document.querySelector("select");
@@ -29,7 +31,10 @@ window.addEventListener("load", function () {
 //   document.dir = language === "ar" ? "rtl" : "ltr";
 // };
 
-// for ice cream machine
+//  ****************************************************************translations //
+
+
+//   **************************************************************for ice cream machine //
 
 
 let btn = document.getElementById("ice-btn")
@@ -45,7 +50,11 @@ btn.addEventListener("click", () => {
 }
 )
 
-// for coffee machine
+//   **************************************************************for ice cream machine //
+
+
+//   **************************************************************// for coffee machine //
+
 
 var btnc = document.getElementById("coffee-btn")
 var coffee = document.getElementById("coffee")
@@ -59,6 +68,8 @@ btnc.addEventListener("click", () => {
   }
 }
 )
+
+//   **************************************************************// for coffee machine //
 
 
 
