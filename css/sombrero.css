@@ -539,6 +539,14 @@ p {
     justify-content: space-between;
 }
 
+.coffee .f {
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
 @media (max-width:1200px) {
     .coffee {
         justify-content: center;
@@ -547,7 +555,6 @@ p {
 
 .coffee form {
     transition: 0.4s;
-    /* opacity: 0; */
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
@@ -714,10 +721,17 @@ form ::placeholder {
     }
     .coffee .f {
         display: none;
-    } 
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+} 
     .event-w {
         text-align: center;
         display: inline-block;
+        transition: 0.4s;
+
     }
     .event-w button {
         margin: 5px;
