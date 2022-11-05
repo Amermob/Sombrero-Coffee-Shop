@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -42,8 +42,7 @@
                 <ul>
                     <li> <a href="#home" data-i18n="home">Home</a></li>
                     <li> <a href="#sombrero" data-i18n="whoweare">who we are?</a></li>
-                    <li> <a href=" https://qrco.de/bbtOWi" data-i18n="menu" target="_blank">menu</a>
-                    </li>
+                    <li> <a href=" https://qrco.de/bbtOWi" data-i18n="menu" target="_blank">menu</a></li>
                     <li><a href="#events" data-i18n="events">events</a></li>
                     <li> <a href="#delivery" data-i18n="delivery">delivery options</a></li>
                     <li> <a href="#gallery" data-i18n="gallery">our gallery</a></li>
@@ -95,93 +94,46 @@
             </div>
             <p data-i18n="business:">for business and inquiries:</p>
             <div class="coffee">
-                 <!-- start ice cream machine 
-                 <div>Ice Cream Machine</div> --> 
-                 <!-- <label for="var">choose your preferred option:</label><br>
+                <!-- start ice cream machine 
+                 <div>Ice Cream Machine</div> -->
+                <!-- <label for="var">choose your preferred option:</label><br>
                     <select id="var" class="var" id="choose your preferred option:">
                         <option value="Coffee machine">Coffee machine</option>
                         <option value="ice cream machine">ice cream machine</option>
                         <option value="ice cream and a coffee machine">ice cream and a coffee machine</option>
-                    </select> --> 
-                    <div class="event-w">   
-                        <p>Please Choose Your Preferred Option</p>              
-                        <button id="ice-btn">Select An Ice Cream Machine</button>
-                        <button id="coffee-btn">Select A Coffee Machine</button>
-                        <button id="both-btn">Both(an ice cream and a coffee machine)</button>
+                    </select> -->
+                <div class="event-w">
+                    <p data-i18n="Preferred">Please Choose Your Preferred Option:</p>
+                    <button data-i18n="ice" id="ice-btn">Select An Ice Cream Machine</button>
+                    <button data-i18n="coffee" id="coffee-btn">Select A Coffee Machine</button>
+                    <!-- <button id="both-btn">Both(an ice cream and a coffee machine)</button> -->
 
-                    </div>
+                </div>
 
                 <div id="ice" class="card f">
-                    <p data-i18n="request an ice cream machine">request an ice cream machine</p>
+                    <p data-i18n="request">request an ice cream machine</p>
                     <img class="card-front before front" src=".//images/ice-cream-machine.png" alt="">
-                    <div  class="card-content">
-                        <form  class="p-w ice-machine" action="https://formspree.io/f/mknegpzg" method="post">
+                    <div class="card-content">
+                        <form class="p-w ice-machine" action="https://formspree.io/f/mknegpzg" method="post">
                             <input type="text-ice" name="Ice Cream Machine" hidden id="" />
-                                    <label for="name-ice" class="required" for="" data-i18n="name:">name:</label>
-                                    <input id="name-ice" required type="text" name="Name" id="">
+                            <label for="name-ice" class="required" for="" data-i18n="name">name:</label>
+                            <input id="name-ice" required type="text" name="Name" id="">
 
-                                <label for="email-ice" class="required" for="" data-i18n="email:">email:</label>
-                                <input id="email-ice" type="email" name="Email" id="">
+                            <label for="email-ice" class="required" for="" data-i18n="email:">email:</label>
+                            <input id="email-ice" type="email" name="Email" id="">
 
-                                <label for="number-ice" class="required" for="" data-i18n="phone number:">phone
-                                    number:</label>
-                                <input id="number-ice" type="number" name="Phone Number" required id="">
-                                <label for="representative" class="required" for="">representative:</label>
-                                <input id="representative" type="text" name="representative" required id="">
-
-                                <label for="location-ice" class="required" for=""
-                                    data-i18n="location:">location:</label>
-                                <input id="location-ice" required type="text" name="Location" id="">
-                                <label for="employees-ice" class="required" for="" data-i18n="how many employees:">how
-                                    many
-                                    employees:</label>
-                                <select id="employees-ice" class="required" required name="How Many Employees:">
-                                    <option value="1 Employees">1</option>
-                                    <option value="2 Employees">2</option>
-                                    <option value="3 Employees">3</option>
-                                    <option value="4 Employees">4</option>
-                                    <option value="5 Employees">5</option>
-                                    <option value="6 Employees">6</option>
-                                    <option value="7 Employees">7</option>
-                                </select>
-
-                                <label for="from-ice" class="required" for="" data-i18n="event perioud from:">event
-                                    perioud
-                                    from:</label>
-                                <input id="from-ice" type="month" name="Event Perioud From" required id="">
-                                <label for="to-ice" class="required" for="" data-i18n="to:">to:</label>
-                                <input id="to-ice" type="month" name="To" required id=""> <br> <br>
-
-                            <label style="color: #777;" for="" data-i18n="For More Information Please Let Us Know:">For
-                                More Information Please Let Us Know:</label>
-                            <textarea placeholder="optional:" name="Feedback" id="hhhh"></textarea>
-                            <input data-i18n="submit" type="submit" value="submit">
-                        </form>
-                    </div>
-                </div> 
-                <!-- end ice cream machine -->
-                <!-- start coffee machine -->
-                <div id="coffee" class="f">
-                    <p data-i18n="request a coffee machine">request a coffee machine</p>
-                    <img class="front" src=".//images/coffee-machine.png" alt="">
-                    <form id="form-p-w" class="p-w coffee-machine" action="https://formspree.io/f/mknegpzg" method="post"
-                        enctype=multipart/form-data>
-                        <input type="text" name="Coffee Machine" hidden id="" />
-                            <label for="name-coffee" class="required" for="" data-i18n="name:">name:</label>
-                            <input id="name-coffee" type="text" name="Name" id="">
-                            <label for="email-coffee" class="required" for="" data-i18n="email:">email:</label>
-                            <input id="email-coffee" type="email" name="Email" id="">
-                            <label for="phone-coffee" class="required" for="" data-i18n="phone number:">phone
+                            <label for="number-ice" class="required" for="" data-i18n="phone number:">phone
                                 number:</label>
-                            <input id="phone-coffee" type="number" name="Phone Number" id="">
+                            <input id="number-ice" type="number" name="Phone Number" required id="">
                             <label for="representative" class="required" for="">representative:</label>
                             <input id="representative" type="text" name="representative" required id="">
-                            <label for="location-coffee" class="required" for="" data-i18n="location:">location:</label>
-                            <input id="location-coffee" required type="text" name="Location" id="">
-                            <label for="employees-coffee" class="required" for="" data-i18n="how many employees:">how
+
+                            <label for="location-ice" class="required" for="" data-i18n="location:">location:</label>
+                            <input id="location-ice" required type="text" name="Location" id="">
+                            <label for="employees-ice" class="required" for="" data-i18n="how many employees:">how
                                 many
                                 employees:</label>
-                            <select id="employees-coffee" class="required" required name="How Many Employees:">
+                            <select id="employees-ice" class="required" required name="How Many Employees:">
                                 <option value="1 Employees">1</option>
                                 <option value="2 Employees">2</option>
                                 <option value="3 Employees">3</option>
@@ -191,12 +143,58 @@
                                 <option value="7 Employees">7</option>
                             </select>
 
-                            <label for="from-coffee" class="required" for="" data-i18n="event perioud from:">event
+                            <label for="from-ice" class="required" for="" data-i18n="event perioud from:">event
                                 perioud
                                 from:</label>
-                            <input id="from-coffee" type="month" name="Event Perioud From" id="">
-                            <label for="to-coffee" class="required" for="" data-i18n="to:">to:</label>
-                            <input id="to-coffee" type="month" name="To" id=""><br> <br>
+                            <input id="from-ice" type="month" name="Event Perioud From" required id="">
+                            <label for="to-ice" class="required" for="" data-i18n="to:">to:</label>
+                            <input id="to-ice" type="month" name="To" required id=""> <br> <br>
+
+                            <label style="color: #777;" for="" data-i18n="For More Information Please Let Us Know:">For
+                                More Information Please Let Us Know:</label>
+                            <textarea placeholder="optional:" name="Feedback" id="hhhh"></textarea>
+                            <input data-i18n="submit" type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+                <!-- end ice cream machine -->
+                <!-- start coffee machine -->
+                <div id="coffee" class="f">
+                    <p data-i18n="request a coffee machine">request a coffee machine</p>
+                    <img class="front" src=".//images/coffee-machine.png" alt="">
+                    <form id="form-p-w" class="p-w coffee-machine" action="https://formspree.io/f/mknegpzg"
+                        method="post" enctype=multipart/form-data>
+                        <input type="text" name="Coffee Machine" hidden id="" />
+                        <label for="name-coffee" class="required" for="" data-i18n="name:">name:</label>
+                        <input id="name-coffee" type="text" name="Name" id="">
+                        <label for="email-coffee" class="required" for="" data-i18n="email:">email:</label>
+                        <input id="email-coffee" type="email" name="Email" id="">
+                        <label for="phone-coffee" class="required" for="" data-i18n="phone number:">phone
+                            number:</label>
+                        <input id="phone-coffee" type="number" name="Phone Number" id="">
+                        <label for="representative" class="required" for="">representative:</label>
+                        <input id="representative" type="text" name="representative" required id="">
+                        <label for="location-coffee" class="required" for="" data-i18n="location:">location:</label>
+                        <input id="location-coffee" required type="text" name="Location" id="">
+                        <label for="employees-coffee" class="required" for="" data-i18n="how many employees:">how
+                            many
+                            employees:</label>
+                        <select id="employees-coffee" class="required" required name="How Many Employees:">
+                            <option value="1 Employees">1</option>
+                            <option value="2 Employees">2</option>
+                            <option value="3 Employees">3</option>
+                            <option value="4 Employees">4</option>
+                            <option value="5 Employees">5</option>
+                            <option value="6 Employees">6</option>
+                            <option value="7 Employees">7</option>
+                        </select>
+
+                        <label for="from-coffee" class="required" for="" data-i18n="event perioud from:">event
+                            perioud
+                            from:</label>
+                        <input id="from-coffee" type="month" name="Event Perioud From" id="">
+                        <label for="to-coffee" class="required" for="" data-i18n="to:">to:</label>
+                        <input id="to-coffee" type="month" name="To" id=""><br> <br>
                         <label style="color: #777;" for="" data-i18n="For More Information Please Let Us Know:">For More
                             Information Please Let Us Know:</label>
                         <textarea placeholder="optional:" name="Feedback"></textarea>
