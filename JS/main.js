@@ -33,45 +33,35 @@ window.addEventListener("load", function () {
 
 //  ****************************************************************translations //
 
-
 //   **************************************************************for ice cream machine //
 
+let btn = document.getElementById("ice-btn");
+let form = document.getElementById("ice");
 
-let btn = document.getElementById("ice-btn")
-let form = document.getElementById("ice")
-
-btn.addEventListener("click", () => {
-  if(form.style.display === "none"){
+btn.onclick = () => {
+  if (form.style.display === "none") {
     form.style.display = "block";
-  }
-  else {
+  } else {
     form.style.display = "none";
   }
-}
-)
+};
 
 //   **************************************************************for ice cream machine //
 
-
 //   **************************************************************// for coffee machine //
 
+let btnc = document.getElementById("coffee-btn");
+let coffee = document.getElementById("coffee");
 
-var btnc = document.getElementById("coffee-btn")
-var coffee = document.getElementById("coffee")
-
-btnc.addEventListener("click", () => {
-  if(coffee.style.display === "none"){
+btnc.onclick = () => {
+  if (coffee.style.display === "none") {
     coffee.style.display = "block";
-  }
-  else {
+  } else {
     coffee.style.display = "none";
   }
-}
-)
+};
 
 //   **************************************************************// for coffee machine //
-
-
 
 // for both machine
 
@@ -87,5 +77,3 @@ btnc.addEventListener("click", () => {
 //   }
 // }
 // )
-
-
