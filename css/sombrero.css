@@ -10,18 +10,6 @@
 
 }
 
-@font-face {
-    font-family:
-        "ArbFONTS-alsamt diwani",
-        "ArbFONTS-arbfonts-samt",
-        "ArbFONTS-Hesham-free",
-        "ArbFONTS-sultani-bold";
-    src: url(../font/ArbFONTS-alsamt\ diwani.ttf);
-    src: url(../font/ArbFONTS-arbfonts-samt-7017.ttf);
-    src: url(../font/ArbFONTS-Hesham-free.ttf);
-    src: url(../font/ArbFONTS-sultani-bold.ttf);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -85,21 +73,24 @@ ul li {
 /* respnsive */
 @media (max-width:1000px) {
     .main-heading {
-        font-size:40px ;
+        font-size: 40px;
     }
 }
+
 @media (max-width:800px) {
     .main-heading {
-        font-size:30px ;
-        
+        font-size: 30px;
+
     }
 }
+
 @media (max-width:767px) {
     .main-heading {
-        font-size:25px ;
-        
+        font-size: 25px;
+
     }
 }
+
 /* responsive */
 
 
@@ -182,6 +173,23 @@ ul li {
     #preloader {
         background-size: 60%;
     }
+}
+
+#btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 3px solid #a05e2b;
+    color: #a05e2b;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 1.4;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    transition: 0.4s;
 }
 
 
@@ -686,6 +694,7 @@ form ::placeholder {
     max-width: 200px;
     padding: 20px;
 }
+
 .event-w {
     display: none;
 }
@@ -708,8 +717,9 @@ form ::placeholder {
 
 .event-w button:hover {
     color: white;
-    background-color:#a05e2b;
+    background-color: #a05e2b;
 }
+
 /* event media quaries */
 
 @media (max-width:700px) {
@@ -719,6 +729,7 @@ form ::placeholder {
     .coffee .f {
         width: 500px;
     }
+
     .coffee .f {
         display: none;
         transition: 0.4s;
@@ -726,17 +737,19 @@ form ::placeholder {
         -moz-transition: 0.4s;
         -ms-transition: 0.4s;
         -o-transition: 0.4s;
-} 
+    }
+
     .event-w {
         text-align: center;
         display: inline-block;
         transition: 0.4s;
 
     }
+
     .event-w button {
         margin: 5px;
     }
-    
+
 }
 
 @media (max-width:550px) {
@@ -746,6 +759,7 @@ form ::placeholder {
     .coffee .f {
         width: 400px;
     }
+
     form div {
         display: flex;
     }
@@ -804,6 +818,7 @@ form ::placeholder {
         font-size: 25px;
     }
 }
+
 @media (max-width:750px) {
     .delivery .text h2 {
         font-size: 20px;
@@ -856,7 +871,10 @@ form ::placeholder {
     text-align: center;
     margin: 50px;
 }
-.servies .content .wifi,.tv,.restroom {
+
+.servies .content .wifi,
+.tv,
+.restroom {
     font-size: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -872,6 +890,7 @@ form ::placeholder {
 .servies .content p {
     font-size: 20px;
 }
+
 /* servies ********************************************************/
 
 
@@ -970,6 +989,7 @@ form ::placeholder {
         height: 330px;
     }
 }
+
 @media (max-width: 280px) {
     .location iframe {
         width: 250px !important;
@@ -1034,11 +1054,14 @@ form ::placeholder {
     text-transform: capitalize;
     text-align: center;
 }
+
 .footer .open {
     padding: 20px;
     text-transform: capitalize;
 }
-.footer h3,h4 {
+
+.footer h3,
+h4 {
     margin: 10px 0 10px 0;
     color: white;
 }
