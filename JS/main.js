@@ -77,3 +77,21 @@ btnc.onclick = () => {
 //   }
 // }
 // )
+
+let btnScroll = document.getElementById("btn");
+
+window.onscroll = () => {
+  if (scrollY >= 1000) {
+    btnScroll.style.display = "block";
+  } else {
+    btnScroll.style.display = "none";
+  }
+};
+
+btnScroll.onclick = () => {
+  scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
