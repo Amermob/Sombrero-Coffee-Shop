@@ -257,7 +257,7 @@ header nav li a {
 
 header nav label {
     margin: auto;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 header nav select {
