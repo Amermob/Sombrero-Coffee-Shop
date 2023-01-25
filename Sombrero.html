@@ -31,8 +31,8 @@
 </head>
 
 <body>
-    <div id="preloader">
-    </div>
+    <!-- <div id="preloader">
+    </div> -->
     <button id="btn">^</button>
     <!-- starts header & nav -->
     <header>
@@ -42,7 +42,7 @@
                 <i class="fa-solid bars fa-bars"></i>
                 <ul>
                     <li> <a href="#home" data-i18n="home">Home</a></li>
-                    <li> <a href="#sombrero" data-i18n="whoweare">who we are?</a></li>
+                    <li> <a href="#sombrero" data-i18n="whoare">who we are?</a></li>
                     <li> <a href=" https://qrco.de/bbtOWi" data-i18n="menu" target="_blank">menu</a></li>
                     <li><a href="#events" data-i18n="events">events</a></li>
                     <li> <a href="#delivery" data-i18n="delivery">delivery options</a></li>
@@ -62,14 +62,14 @@
     <!-- start landing -->
     <div class="landing">
         <div class="text">
-            <h2 data-i18n="Sombrero">Sombrero</h2>
-            <h3 data-i18n="will brighten your day">will brighten your day</h3>
+            <h2 data-i18n="SombreroLanding">Sombrero</h2>
+            <h3 data-i18n="brighten">will brighten your day</h3>
         </div>
     </div>
     <!-- start sombrero -->
     <div id="sombrero" class="sombrero padding">
         <div class="container">
-            <div class="main-heading" data-i18n="who we are?">
+            <div class="main-heading" data-i18n="whoWeAre">
                 who we are?
             </div>
             <div class="card">
@@ -93,7 +93,7 @@
             <div class="main-heading" data-i18n="Events">
                 Events
             </div>
-            <p data-i18n="business:">for business and inquiries:</p>
+            <p data-i18n="business">for business and inquiries:</p>
             <div class="coffee">
                 <!-- start ice cream machine 
                  <div>Ice Cream Machine</div> -->
@@ -106,13 +106,13 @@
                 <div class="event-w">
                     <p data-i18n="Preferred">Please Choose Your Preferred Option:</p>
                     <button data-i18n="ice" id="ice-btn">Select An Ice Cream Machine</button>
-                    <button data-i18n="coffee" id="coffee-btn">Select A Coffee Machine</button>
+                    <button data-i18n="coffeeMachine" id="coffee-btn">Select A Coffee Machine</button>
                     <!-- <button id="both-btn">Both(an ice cream and a coffee machine)</button> -->
 
                 </div>
 
                 <div id="ice" class="card f">
-                    <p data-i18n="request">request an ice cream machine</p>
+                    <p data-i18n="requesT">request an ice cream machine</p>
                     <img class="card-front before front" src=".//images/ice-cream-machine.png" alt="">
                     <div class="card-content">
                         <form class="p-w ice-machine" action="https://formspree.io/f/mknegpzg" method="post">
@@ -120,18 +120,19 @@
                             <label for="name-ice" class="required" for="" data-i18n="name">name:</label>
                             <input id="name-ice" required type="text" name="Name" id="">
 
-                            <label for="email-ice" class="required" for="" data-i18n="email:">email:</label>
+                            <label for="email-ice" class="required" for="" data-i18n="email">email:</label>
                             <input id="email-ice" type="email" name="Email" id="">
 
-                            <label for="number-ice" class="required" for="" data-i18n="phone number:">phone
+                            <label for="number-ice" class="required" for="" data-i18n="phoneNumber">phone
                                 number:</label>
                             <input id="number-ice" type="number" name="Phone Number" required id="">
                             <label for="Representative-ice" class="required" for="">representative:</label>
                             <input id="Representative-ice" type="text" name="Representative" required id="">
 
-                            <label for="location-ice" class="required" for="" data-i18n="location:">location:</label>
+                            <label for="location-ice" class="required" for=""
+                                data-i18n="locationRequest">location:</label>
                             <input id="location-ice" required type="text" name="Location" id="">
-                            <label for="employees-ice" class="required" for="" data-i18n="how many employees:">how
+                            <label for="employees-ice" class="required" for="" data-i18n="howManyEmployees">how
                                 many
                                 employees:</label>
                             <select id="employees-ice" class="required" required name="How Many Employees:">
@@ -144,14 +145,14 @@
                                 <option value="7 Employees">7</option>
                             </select>
 
-                            <label for="from-ice" class="required" for="" data-i18n="event perioud from:">event
+                            <label for="from-ice" class="required" for="" data-i18n="eventPerioudFrom">event
                                 perioud
                                 from:</label>
                             <input id="from-ice" type="month" name="Event Perioud From" required id="">
-                            <label for="to-ice" class="required" for="" data-i18n="to:">to:</label>
+                            <label for="to-ice" class="required" for="" data-i18n="to">to:</label>
                             <input id="to-ice" type="month" name="To" required id=""> <br> <br>
 
-                            <label style="color: #777;" for="" data-i18n="For More Information Please Let Us Know:">For
+                            <label style="color: #777;" for="" data-i18n="forMoreInfo">For
                                 More Information Please Let Us Know:</label>
                             <textarea placeholder="optional:" name="Feedback" id="hhhh"></textarea>
                             <input data-i18n="submit" type="submit" value="submit">
@@ -161,23 +162,25 @@
                 <!-- end ice cream machine -->
                 <!-- start coffee machine -->
                 <div id="coffee" class="f">
-                    <p data-i18n="request a coffee machine">request a coffee machine</p>
+                    <p data-i18n="requestCoffee">request a coffee machine</p>
                     <img class="front" src=".//images/coffee-machine.png" alt="">
                     <form id="form-p-w" class="p-w coffee-machine" action="https://formspree.io/f/mknegpzg"
                         method="post" enctype=multipart/form-data>
                         <input type="text" name="Coffee Machine" hidden id="" />
-                        <label for="name-coffee" class="required" for="" data-i18n="name:">name:</label>
+                        <label for="name-coffee" class="required" for="" data-i18n="name">name:</label>
                         <input id="name-coffee" type="text" name="Name" id="">
-                        <label for="email-coffee" class="required" for="" data-i18n="email:">email:</label>
+                        <label for="email-coffee" class="required" for="" data-i18n="email">email:</label>
                         <input id="email-coffee" type="email" name="Email" id="">
-                        <label for="phone-coffee" class="required" for="" data-i18n="phone number:">phone
+                        <label for="phone-coffee" class="required" for="" data-i18n="phoneNumber">phone
                             number:</label>
                         <input id="phone-coffee" type="number" name="Phone Number" id="">
-                        <label for="Representative-coffee" class="required" for="">representative:</label>
+                        <label for="Representative-coffee" class="required" data-i18n="representative"
+                            for="">representative:</label>
                         <input id="Representative-coffee" type="text" name="Representative" required id="">
-                        <label for="location-coffee" class="required" for="" data-i18n="location:">location:</label>
+                        <label for="location-coffee" class="required" for=""
+                            data-i18n="locationRequest">location:</label>
                         <input id="location-coffee" required type="text" name="Location" id="">
-                        <label for="employees-coffee" class="required" for="" data-i18n="how many employees:">how
+                        <label for="employees-coffee" class="required" for="" data-i18n="howManyEmployees">how
                             many
                             employees:</label>
                         <select id="employees-coffee" class="required" required name="How Many Employees:">
@@ -190,13 +193,13 @@
                             <option value="7 Employees">7</option>
                         </select>
 
-                        <label for="from-coffee" class="required" for="" data-i18n="event perioud from:">event
+                        <label for="from-coffee" class="required" for="" data-i18n="eventTime">event
                             perioud
                             from:</label>
                         <input id="from-coffee" type="month" name="Event Perioud From" id="">
-                        <label for="to-coffee" class="required" for="" data-i18n="to:">to:</label>
+                        <label for="to-coffee" class="required" for="" data-i18n="to">to:</label>
                         <input id="to-coffee" type="month" name="To" id=""><br> <br>
-                        <label style="color: #777;" for="" data-i18n="For More Information Please Let Us Know:">For More
+                        <label style="color: #777;" for="" data-i18n="forMoreInfo">For More
                             Information Please Let Us Know:</label>
                         <textarea placeholder="optional:" name="Feedback"></textarea>
                         <input data-i18n="submit" type="submit" value="submit">
@@ -205,7 +208,7 @@
                 <!-- end coffee machine -->
             </div>
             <div class="col padding">
-                <p data-i18n="in collaboration with:">in collaboration with:</p>
+                <p data-i18n="collaboration">in collaboration with:</p>
                 <div class="img-col">
                     <img src=".//images/col/768px-Ministry_of_housing_Logo.svg.png" alt="">
                     <img src=".//images/col/MASDAR-LOGO-low-res.webp" alt="">
@@ -218,11 +221,11 @@
     <!-- start delivery -->
     <div id="delivery" class="delivery padding">
         <div class="container">
-            <div class="main-heading" data-i18n="delivery option">
+            <div class="main-heading" data-i18n="deliveryOption">
                 delivery option
             </div>
             <div class="text">
-                <h2 data-i18n="sombrero porvides Different delivery options which are:">sombrero porvides Different
+                <h2 data-i18n="sombreroPRovide">sombrero porvides Different
                     delivery options which are:
                 </h2>
 
@@ -237,7 +240,7 @@
     </div>
     <!-- gallary -->
     <div id="gallery" class="gallery padding">
-        <div class="main-heading" data-i18n="Sombrero gallery">
+        <div class="main-heading" data-i18n="SombreroGallery">
             Sombrero gallery
         </div>
         <div class="box">
@@ -274,7 +277,7 @@
     <!-- services -->
     <div id="servies" class="servies">
         <div class="container">
-            <div class="main-heading" data-i18n="our servies">
+            <div class="main-heading" data-i18n="ourServies">
                 our servies
             </div>
             <div class="ser-img">
@@ -289,7 +292,7 @@
     <!-- start find us -->
     <div id="find-us" class="find-us padding">
         <div class="container">
-            <div class="main-heading" data-i18n="find us at">
+            <div class="main-heading" data-i18n="findUs">
                 find us at
             </div>
             <div class="box">
@@ -302,8 +305,7 @@
                     <div class="con">
                         <div>
                             <i class="fa-solid fa-location-dot"></i>
-                            <p class="loca" data-i18n="location: Address: 4086 Prince Muhammad Ibn
-                        Abd Al Aziz, As Sulimaniyah, Riyadh 12242">location: Address: 4086 Prince Muhammad Ibn
+                            <p class="loca" data-i18n="location">location: Address: 4086 Prince Muhammad Ibn
                                 Abd Al Aziz, As Sulimaniyah, Riyadh 12242</p>
                         </div>
                         <div>
@@ -311,7 +313,7 @@
                             <p class="tel" data-i18n="Phone">Phone: 050 295 0376</p>
                         </div>
                     </div>
-                    <span data-i18n="our socials:">our socials:</span>
+                    <span data-i18n="ourSocials">our socials:</span>
                     <div class="socials">
                         <a href="https://www.facebook.com/sombreroksa" aria-label="facebook" target="_blank"><img
                                 src=".//socials/facebook.png" alt=""></a>
@@ -332,10 +334,10 @@
     <div class="footer">
 
         <div class="open">
-            <h3 class="mt-2">working hours</h3>
-            <h4>saturday to thursday</h4>
+            <h3 class="mt-2" data-i18n="workingHours">working hours</h3>
+            <h4 data-i18n="StT">saturday to thursday</h4>
             <span>6:30AM - 2:00AM</span>
-            <h4>friday</h4>
+            <h4 data-i18n="friday">friday</h4>
             <span>1:00PM - 2:00AM</span>
         </div>
         <!-- <span>made by <a href="https://discordapp.com/users/285849563422654465" aria-label="discord" target="_blank">
@@ -350,12 +352,9 @@
                     src=".//socials/tik-tok.png" alt=""></a>
             <a href="https://twitter.com/sombrero_ksa" aria-label="twitter" target="_blank"><img
                     src=".//socials/twitter.png" alt=""></a>
-            <p data-i18n="all rights reserved to sombrero">all rights reserved to sombrero 2020 &copy;</p>
+            <p data-i18n="reserved">all rights reserved to sombrero 2020 &copy;</p>
         </div>
-        <!-- <select id="language">
-            <option value="ar">Arabic</option>
-            <option selected value="en">English</option>
-        </select> -->
+
         <div>
 
         </div>
