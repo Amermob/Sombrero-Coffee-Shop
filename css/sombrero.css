@@ -1006,7 +1006,7 @@ form ::placeholder {
 }
 
 .group {
-    flex-basis: 30%;
+    margin-left: 66px;
 
 }
 
