@@ -10,6 +10,18 @@
 
 }
 
+@font-face {
+    font-family:
+        "ArbFONTS-alsamt diwani",
+        "ArbFONTS-arbfonts-samt",
+        "ArbFONTS-Hesham-free",
+        "ArbFONTS-sultani-bold";
+    src: url(../font/ArbFONTS-alsamt\ diwani.ttf);
+    src: url(../font/ArbFONTS-arbfonts-samt-7017.ttf);
+    src: url(../font/ArbFONTS-Hesham-free.ttf);
+    src: url(../font/ArbFONTS-sultani-bold.ttf);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -257,7 +269,7 @@ header nav li a {
 
 header nav label {
     margin: auto;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 header nav select {
@@ -863,33 +875,22 @@ form ::placeholder {
 
 
 /* servies *********************************************************/
-.servies .content {
+
+
+.servies .ser-img {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;
-    margin: 50px;
 }
 
-.servies .content .wifi,
-.tv,
-.restroom {
-    font-size: 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: white;
-    padding: 50px;
-    max-width: 280px;
-    height: 180px;
+.servies .ser-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 10px;
 }
 
 
-
-
-.servies .content p {
-    font-size: 20px;
-}
 
 /* servies ********************************************************/
 
