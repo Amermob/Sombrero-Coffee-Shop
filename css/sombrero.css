@@ -890,6 +890,13 @@ form ::placeholder {
     margin: 10px;
 }
 
+@media (max-width:700px) {
+    .servies .ser-img img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
 
 
 /* servies ********************************************************/
