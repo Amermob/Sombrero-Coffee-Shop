@@ -76,3 +76,4 @@ btnScroll.onclick = () => {
     behavior: "smooth",
   });
 };
+
