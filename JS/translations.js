@@ -24,7 +24,7 @@ const translations = {
     /////////////////////////////////////////////////// landing
 
     ///////////////////////////////////////////////////// events
-    Events: "Events",
+    // events: "Events",
     business: "for business and inquiries:",
     Preferred: "Please Choose Your Preferred Option:",
     ice: "Select An Ice Cream Machine:",
@@ -71,7 +71,7 @@ const translations = {
     location:
       "location: Address: 4086 Prince Muhammad Ibn Abd Al Aziz, As Sulimaniyah, Riyadh 12242",
     Phone: "Phone: 050 295 0376",
-    ourSocials: "ourSocials:",
+    ourSocials: "our Socials:",
 
     ///////////////////////////////////////////////////// find us
 
@@ -86,19 +86,86 @@ const translations = {
   ar: {
     ///////////////////////////////////////////////////nav
     home: "الصفحة الرئيسية",
-    whoweare: "من نحن",
+    whoare: "من نحن؟",
     menu: " قائمة الطعام",
     events: "فعاليات",
     delivery: " طرق التوصيل",
     gallery: "معرض الصور",
+    servies: "الخدمات التي نوفرها",
     find: "اين يمكنم العثور علينا",
     en: "الانجليزية",
     ar: "العربية",
     //////////////////////////////////////////////// nav
     /////////////////////////////////////////////////// landing
+    SombreroLanding: "Sombrero",
+    brighten: "will brighten your day",
     sombrero: "سومبريرو",
     sombrero_means: "سومبريرو هي كلمة لاتينيه معناتها",
     sombrero_suadi: "",
+    whoWeAre: "من نحن؟",
+    sombrero_means: "سمبريرو هي كلمة لاتينية معناها",
+    sombrero_suadi:
+      "نستورد اجود انواع البن المختص من كولومبيا و نقوم بحمصها هنا في الرياض لنقدم لزبئننا كوب من القهوة عالية الجودة ليرتقي بذائقتهم المميزة",
+    /////////////////////////////////////////////////// landing
+
+    ///////////////////////////////////////////////////// events
+    events: "فعاليات",
+    business: "لطلب يرجع تعبئة النموذج ",
+    Preferred: "يرجى اختيار الخيار المناسب لكم",
+    ice: "لي طلب مكينة ايس كريم",
+    coffeeMachine: "لي طلب مكينة القهوة",
+    requesT: "لي طلب مكينة ايس كريم",
+    requestCoffee: "لي طلب مكينة القهوة",
+    name: "الاسم:",
+    email: "اليميل",
+    phoneNumber: "رقم الهانف",
+    representative: "الجهة المتقدمة:",
+    locationRequest: "الموقع:",
+    eventTime: "من",
+    to: "الى:",
+
+    howManyEmployees: "عدد الموضفين:",
+    eventPerioudFrom: "من:",
+    to: "الى",
+    forMoreInfo: "لاستفسارات اخرى بخصوص الفعاليات",
+    submit: "ارسال الطلب",
+    collaboration: "بي التعاون مع",
+
+    ///////////////////////////////////////////////////// events
+
+    //////////////////////////////////////////////////// delivery
+
+    deliveryOption: "طرق التوصيل",
+    sombreroPRovide: "سمبريرو توفر عددت خدمات لي التوصيل و هي",
+
+    //////////////////////////////////////////////////// delivery
+
+    ///////////////////////////////////////////////////// gallery
+
+    SombreroGallery: "معرض الصور",
+
+    ///////////////////////////////////////////////////// gallery
+
+    ///////////////////////////////////////////////////////servies
+    ourServies: "الخدمات التي نوفرها",
+
+    ///////////////////////////////////////////////////////servies
+
+    ///////////////////////////////////////////////////// find us
+    findUs: "يمكنكم العثةر علينا على",
+
+    location: "4086 طريق الأمير محمد بن عبدالعزيز، السليمانية، الرياض 12242",
+    Phone: " 050 295 0376",
+    ourSocials: "مواقع التواصل الجتماعي",
+
+    ///////////////////////////////////////////////////// find us
+
+    //////////////////////////////////////////////////////// footer
+
+    workingHours: "ساعات العمل",
+    StT: "من السبت الى الخميس",
+    friday: "الجمعة",
+    reserved: "جميع الحقوق محفوظة لي سمبريرو 2020",
 
     /////////////////////////////////////////////////// landing
 
@@ -124,4 +191,4 @@ const translations = {
   },
 };
 
-// export default translations;
+export default translations;
