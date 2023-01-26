@@ -13,12 +13,22 @@
     <link rel="stylesheet" href=".//css/all.min.css">
     <!-- Formater -->
     <link rel="stylesheet" href=".//css/normalize.css">
-    <!-- Google Font -->
+    <!-- English Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- English Font -->
+
+    <!-- Arabic Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Arabic Font -->
+
+
     <!-- Sombrero Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,8 +60,8 @@
                     <li> <a href="#servies" data-i18n="servies">our services</a></li>
                     <li> <a href="#find-us" data-i18n="find">find us</a></li>
                     <select id="language">
-                        <option data-i18n="ar" value="ar">Arabic</option>
-                        <option data-i18n="en" selected value="en">English</option>
+                        <option id="btnArabic" data-i18n="ar" value="ar">Arabic</option>
+                        <option id="btnEnglish" data-i18n="en" selected value="en">English</option>
                     </select>
                 </ul>
             </nav>
@@ -76,8 +86,11 @@
                 <img class="matthew" src=".//images/sombrero.jpg" alt="">
                 <div class="text">
                     <h2 data-i18n="sombrero">sombrero?</h2>
-                    <p data-i18n="sombrero_means">sombrero is a latin word which means "<img
-                            src=".//images/mexican-hat.png" alt="">".</p>
+                    <div class="img-fx">
+                        <p data-i18n="sombrero_means">sombrero is a latin word which means </p>
+                        <img src=".//images/mexican-hat.png" alt="">
+
+                    </div>
                     <p data-i18n="sombrero_suadi">sombrero is a specialty saudi owned coffee shop which
                         porvides
                         only the best top quality of pure
@@ -90,7 +103,7 @@
     </div>
     <div id="events" class="events padding">
         <div class="container">
-            <div class="main-heading" data-i18n="Events">
+            <div class="main-heading" data-i18n="events">
                 Events
             </div>
             <p data-i18n="business">for business and inquiries:</p>
@@ -126,7 +139,8 @@
                             <label for="number-ice" class="required" for="" data-i18n="phoneNumber">phone
                                 number:</label>
                             <input id="number-ice" type="number" name="Phone Number" required id="">
-                            <label for="Representative-ice" class="required" for="">representative:</label>
+                            <label for="Representative-ice" data-i18n="representative" class="required"
+                                for="">representative:</label>
                             <input id="Representative-ice" type="text" name="Representative" required id="">
 
                             <label for="location-ice" class="required" for=""
@@ -155,7 +169,7 @@
                             <label style="color: #777;" for="" data-i18n="forMoreInfo">For
                                 More Information Please Let Us Know:</label>
                             <textarea placeholder="optional:" name="Feedback" id="hhhh"></textarea>
-                            <input data-i18n="submit" type="submit" value="submit">
+                            <input id="btnSubmit" data-i18n="submit" type="submit" value="submit">
                         </form>
                     </div>
                 </div>
