@@ -1,3 +1,23 @@
+const languageSelector = document.querySelector("select");
+languageSelector.addEventListener("change", (event) => {
+  setLanguage(event.target.value);
+  localStorage.setItem("lang", event.target.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const language = localStorage.getItem("lang") || "en";
+  setLanguage(language);
+});
+
+const setLanguage = (language) => {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((element) => {
+    const translationKey = element.getAttribute("data-i18n");
+    element.textContent = translations[language][translationKey];
+  });
+  document.dir = language === "ar" ? "rtl" : "ltr";
+};
+
 const translations = {
   en: {
     /////////////////////////////////////////////////nav
@@ -117,17 +137,17 @@ const translations = {
     requesT: "لي طلب مكينة ايس كريم",
     requestCoffee: "لي طلب مكينة القهوة",
     name: "الاسم:",
-    email: "اليميل",
-    phoneNumber: "رقم الهانف",
+    email: "اليميل:",
+    phoneNumber: "رقم الهاتف:",
     representative: "الجهة المتقدمة:",
     locationRequest: "الموقع:",
-    eventTime: "من",
+    eventTime: "من:",
     to: "الى:",
 
     howManyEmployees: "عدد الموضفين:",
     eventPerioudFrom: "من:",
-    to: "الى",
-    forMoreInfo: "لاستفسارات اخرى بخصوص الفعاليات",
+    to: "الى:",
+    forMoreInfo: "لاستفسارات اخرى بخصوص الفعاليات:",
     submit: "ارسال الطلب",
     collaboration: "بي التعاون مع",
 
@@ -152,7 +172,7 @@ const translations = {
     ///////////////////////////////////////////////////////servies
 
     ///////////////////////////////////////////////////// find us
-    findUs: "يمكنكم العثةر علينا على",
+    findUs: "يمكنكم العثور علينا على:",
 
     location: "4086 طريق الأمير محمد بن عبدالعزيز، السليمانية، الرياض 12242",
     Phone: " 050 295 0376",
@@ -190,5 +210,3 @@ const translations = {
     //////////////////////////////////////////////////////// footer
   },
 };
-
-export default translations;
