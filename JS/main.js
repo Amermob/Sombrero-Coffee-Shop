@@ -20,7 +20,7 @@ btn.onclick = () => {
   } else {
     form.style.display = "none";
   }
-  if (from.style.display === "block") {
+  if (form.style.display === "block") {
     coffee.style.display = "none";
   }
 };
