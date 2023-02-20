@@ -44,7 +44,7 @@ btnc.onclick = () => {
 let btnScroll = document.getElementById("btn");
 
 window.onscroll = () => {
-  if (scrollY >= 1000) {
+  if (scrollY >= 2000) {
     btnScroll.style.display = "block";
   } else {
     btnScroll.style.display = "none";
