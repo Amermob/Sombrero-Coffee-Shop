@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -19,16 +19,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- English Font -->
-
     <!-- Arabic Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- Arabic Font -->
-
-
     <!-- Sombrero Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +36,20 @@
 </head>
 
 <body>
+    <!-- Preloader -->
     <div id="preloader">
-    </div> 
+    </div>
     <button id="btn">^</button>
     <!-- starts header & nav -->
     <header>
         <div class="container">
             <nav>
                 <a href="#home" aria-label="Home Page"><img src=".//images/fixed_Logo.png" alt=""></a>
-                <i class="fa-solid bars fa-bars"></i>
+                <div class="hover">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul>
                     <li> <a href="#home" data-i18n="home">Home</a></li>
                     <li> <a href="#sombrero" data-i18n="whoare">who we are?</a></li>
@@ -60,14 +60,13 @@
                     <li> <a href="#servies" data-i18n="servies">our services</a></li>
                     <li> <a href="#find-us" data-i18n="find">find us</a></li>
                     <select id="language">
-                        <option id="btnArabic" data-i18n="ar" selected value="ar">Arabic</option>
-                        <option id="btnEnglish" data-i18n="en"  value="en">English</option>
+                        <option id="btnArabic" data-i18n="ar" value="ar">Arabic</option>
+                        <option id="btnEnglish" data-i18n="en" selected value="en">English</option>
                     </select>
                 </ul>
             </nav>
         </div>
     </header>
-
     <!-- end header & nav -->
     <!-- start landing -->
     <div class="landing">
@@ -76,6 +75,7 @@
             <h3 data-i18n="brighten">will brighten your day</h3>
         </div>
     </div>
+    <!-- end landing -->
     <!-- start sombrero -->
     <div id="sombrero" class="sombrero padding">
         <div class="container">
@@ -89,7 +89,6 @@
                     <div class="img-fx">
                         <p data-i18n="sombrero_means">sombrero is a latin word which means </p>
                         <img src=".//images/mexican-hat.png" alt="">
-
                     </div>
                     <p data-i18n="sombrero_suadi">sombrero is a specialty saudi owned coffee shop which
                         porvides
@@ -108,41 +107,28 @@
             </div>
             <p data-i18n="business">for business and inquiries:</p>
             <div class="coffee">
-                <!-- start ice cream machine 
-                 <div>Ice Cream Machine</div> -->
-                <!-- <label for="var">choose your preferred option:</label><br>
-                    <select id="var" class="var" id="choose your preferred option:">
-                        <option value="Coffee machine">Coffee machine</option>
-                        <option value="ice cream machine">ice cream machine</option>
-                        <option value="ice cream and a coffee machine">ice cream and a coffee machine</option>
-                    </select> -->
                 <div class="event-w">
                     <p data-i18n="Preferred">Please Choose Your Preferred Option:</p>
                     <button data-i18n="ice" id="ice-btn">Select An Ice Cream Machine</button>
                     <button data-i18n="coffeeMachine" id="coffee-btn">Select A Coffee Machine</button>
-                    <!-- <button id="both-btn">Both(an ice cream and a coffee machine)</button> -->
-
                 </div>
-
                 <div id="ice" class="card f">
                     <p data-i18n="requesT">request an ice cream machine</p>
                     <img class="card-front before front" src=".//images/ice-cream-machine.png" alt="">
                     <div class="card-content">
-                        <form class="p-w ice-machine" action="https://formspree.io/f/mknegpzg" method="post" target="_blank">
+                        <form target="_blank" class="p-w ice-machine" action="https://formspree.io/f/mknegpzg"
+                            method="post">
                             <input type="text-ice" name="Ice Cream Machine" hidden id="" />
                             <label for="name-ice" class="required" for="" data-i18n="name">name:</label>
                             <input id="name-ice" required type="text" name="Name" id="">
-
                             <label for="email-ice" class="required" for="" data-i18n="email">email:</label>
                             <input id="email-ice" type="email" name="Email" id="">
-
                             <label for="number-ice" class="required" for="" data-i18n="phoneNumber">phone
                                 number:</label>
                             <input id="number-ice" type="number" name="Phone Number" required id="">
                             <label for="Representative-ice" data-i18n="representative" class="required"
                                 for="">representative:</label>
                             <input id="Representative-ice" type="text" name="Representative" required id="">
-
                             <label for="location-ice" class="required" for=""
                                 data-i18n="locationRequest">location:</label>
                             <input id="location-ice" required type="text" name="Location" id="">
@@ -158,14 +144,12 @@
                                 <option value="6 Employees">6</option>
                                 <option value="7 Employees">7</option>
                             </select>
-
                             <label for="from-ice" class="required" for="" data-i18n="eventPerioudFrom">event
                                 perioud
                                 from:</label>
                             <input id="from-ice" type="month" name="Event Perioud From" required id="">
                             <label for="to-ice" class="required" for="" data-i18n="to">to:</label>
                             <input id="to-ice" type="month" name="To" required id=""> <br> <br>
-
                             <label style="color: #777;" for="" data-i18n="forMoreInfo">For
                                 More Information Please Let Us Know:</label>
                             <textarea placeholder="optional:" name="Feedback" id="hhhh"></textarea>
@@ -178,8 +162,8 @@
                 <div id="coffee" class="f">
                     <p data-i18n="requestCoffee">request a coffee machine</p>
                     <img class="front" src=".//images/coffee-machine.png" alt="">
-                    <form id="form-p-w" class="p-w coffee-machine" action="https://formspree.io/f/mknegpzg"
-                        method="post" target="_blank" enctype=multipart/form-data>
+                    <form target="_blank" id="form-p-w" class="p-w coffee-machine"
+                        action="https://formspree.io/f/mknegpzg" method="post" enctype=multipart/form-data>
                         <input type="text" name="Coffee Machine" hidden id="" />
                         <label for="name-coffee" class="required" for="" data-i18n="name">name:</label>
                         <input id="name-coffee" type="text" name="Name" id="">
@@ -206,7 +190,6 @@
                             <option value="6 Employees">6</option>
                             <option value="7 Employees">7</option>
                         </select>
-
                         <label for="from-coffee" class="required" for="" data-i18n="eventTime">event
                             perioud
                             from:</label>
@@ -242,7 +225,6 @@
                 <h2 data-i18n="sombreroPRovide">sombrero porvides Different
                     delivery options which are:
                 </h2>
-
             </div>
             <div class="img">
                 <img src=".//delivery/chefz.png" alt="">
@@ -257,7 +239,7 @@
         <div class="main-heading" data-i18n="SombreroGallery">
             Sombrero gallery
         </div>
-<div class="box">
+        <div class="box">
             <img src=".//gallary/دونات مكس.jpeg" alt="">
             <img src=".//gallary/دونات زعتر.jpeg" alt="">
             <img src=".//gallary/ايس كوكونت لاتية.jpeg" alt="">
@@ -272,13 +254,13 @@
             <img src=".//gallary/New folder/292289658_712522879852584_4158039454375623388_n.jpg" alt="">
             <img src=".//gallary/New folder/300539745_124408840167154_7413900838221305963_n.jpg" alt="">
             <img src=".//gallary/New folder/300581092_1076320293275363_9158558620042193414_n.jpg" alt="">
+            <img src=".//gallary/New folder/300956366_587141546193052_2058959965518935874_n.jpg" alt="">
             <img src=".//gallary/New folder/305750888_642554130493711_8076379298524102603_n.jpg" alt="">
             <img src=".//gallary/New folder/306698260_489284466017066_3184014950665451893_n.jpg" alt="">
             <img src=".//gallary/New folder/306768294_769939590783572_256561944377008173_n.jpg" alt="">
         </div>
     </div>
     <!-- end delivery-->
-
     <!-- services -->
     <div id="servies" class="servies">
         <div class="container">
@@ -292,7 +274,6 @@
             </div>
         </div>
     </div>
-
     <!-- services -->
     <!-- start find us -->
     <div id="find-us" class="find-us padding">
@@ -322,12 +303,10 @@
                     <div class="socials">
                         <a href="https://www.facebook.com/sombreroksa" aria-label="facebook" target="_blank"><img
                                 src=".//socials/facebook.png" alt=""></a>
-
                         <a href="https://www.instagram.com/sombrero_ksa/?hl=en" aria-label="instagram"
                             target="_blank"><img src=".//socials/instagram.png" alt=""></a>
                         <a href="https://www.tiktok.com/@sombrero.ksa" aria-label="tik-tok" target="_blank"><img
                                 src=".//socials/tik-tok.png" alt=""></a>
-
                         <a href="https://twitter.com/sombrero_ksa" aria-label="twitter" target="_blank"><img
                                 src=".//socials/twitter.png" alt=""></a>
                     </div>
@@ -337,7 +316,6 @@
     </div>
     </div>
     <div class="footer">
-
         <div class="open">
             <h3 class="mt-2" data-i18n="workingHours">working hours</h3>
             <h4 data-i18n="StT">saturday to thursday</h4>
@@ -357,14 +335,9 @@
                     src=".//socials/tik-tok.png" alt=""></a>
             <a href="https://twitter.com/sombrero_ksa" aria-label="twitter" target="_blank"><img
                     src=".//socials/twitter.png" alt=""></a>
-            <p data-i18n="reserved">all rights reserved to sombrero 2020 &copy;</p>
-        </div>
-
-        <div>
-
+            <p data-i18n="reserved">all rights reserved to sombrero 2020 &copy; </p>
         </div>
     </div>
-
     <!-- end find us -->
     <script src=".//JS/main.js" type="module"></script>
     <script src=".//JS/translations.js"></script>
