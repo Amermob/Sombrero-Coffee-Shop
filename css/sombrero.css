@@ -23,6 +23,7 @@
     height: 2px;
     background-color: #fff;
     position: absolute;
+    border-radius:20px;
     transition: 0.45s;
     -webkit-transition: 0.45s;
     -moz-transition: 0.45s;
