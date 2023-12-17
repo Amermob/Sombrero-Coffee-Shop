@@ -356,7 +356,7 @@ header nav select:focus {
 @media (max-width:990px) {
     header nav li {
         font-size: 13px;
-        margin: 7px;
+        margin: -3px;
     }
 
     #language {
