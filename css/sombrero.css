@@ -10,70 +10,6 @@
 
 }
 
-.hover {
-    width: 45px;
-    height: 30px;
-    position: relative;
-
-}
-
-.hover span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    border-radius:20px;
-    transition: 0.45s;
-    -webkit-transition: 0.45s;
-    -moz-transition: 0.45s;
-    -ms-transition: 0.45s;
-    -o-transition: 0.45s;
-}
-
-.hover span:first-child {
-    top: 0%;
-}
-
-
-.hover span:nth-child(2) {
-    top: 50%;
-
-}
-
-.hover span:last-child {
-    top: 100%;
-}
-
-/* ------------------------------------------------------------------- */
-
-
-.hover:hover span:first-child {
-    top: 50%;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-}
-
-
-.hover:hover span:nth-child(2) {
-    opacity: 0;
-}
-
-.hover:hover span:last-child {
-    top: 50%;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-}
-
-
-
-
 
 html {
     scroll-behavior: smooth;
@@ -264,6 +200,36 @@ ul li {
     }
 }
 
+.dots {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: 0.4s;
+    display: none;
+    /* background-color: red; */
+}
+
+.dots span {
+    margin-top: 10px;
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.dots:hover :first-child {
+    transform: rotate(45deg) translate(17px);
+}
+
+.dots:hover :nth-child(2) {
+    opacity: 0;
+}
+
+.dots:hover :last-child {
+    transform: rotate(-45deg) translate(17px);
+}
+
 header {
     background-color: var(--main-background-color);
     transition: 0.5s;
@@ -356,7 +322,7 @@ header nav select:focus {
 @media (max-width:990px) {
     header nav li {
         font-size: 13px;
-        margin: -3px;
+        margin: 7px;
     }
 
     #language {
@@ -390,8 +356,8 @@ header nav select:focus {
         display: none;
     }
 
-    header .hover {
-        display: flex;
+    header .dots {
+        display: block;
 
     }
 }
@@ -417,7 +383,7 @@ header nav select:focus {
 }
 
 @media (min-width: 768px) {
-    header .hover {
+    header .bars {
         display: none;
     }
 }
@@ -1081,7 +1047,6 @@ form ::placeholder {
 .group {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
 }
 
 
