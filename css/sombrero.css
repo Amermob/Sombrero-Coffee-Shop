@@ -712,6 +712,7 @@ select {
     font-size: 12px;
     color: red;
     margin-left: 5px;
+    margin-top: 3px;
 }
 
 form ::placeholder {
