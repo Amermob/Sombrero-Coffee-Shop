@@ -52,7 +52,7 @@ const translations = {
     requesT: "request an ice cream machine:",
     requestCoffee: "request a coffee machine:",
     name: "name:",
-    email: "email",
+    email: "email:",
     phoneNumber: "phone number:",
     representative: "representative:",
     locationRequest: "location:",
@@ -61,7 +61,7 @@ const translations = {
 
     howManyEmployees: "how many employees:",
     eventPerioudFrom: "event perioud from:",
-    to: "to",
+    to: "to:",
     forMoreInfo: "For More Information Please Let Us Know:",
     collaboration: "in collaboration with:",
 
