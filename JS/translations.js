@@ -1,11 +1,11 @@
 const languageSelector = document.querySelector("select");
 languageSelector.addEventListener("change", (event) => {
   setLanguage(event.target.value);
-  localStorage.setItem("lang", event.target.value);
+  sessionStorage.setItem("lang", event.target.value);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const language = localStorage.getItem("lang") || "en";
+  const language = sessionStorage.getItem("lang") || "en";
   setLanguage(language);
 });
 
