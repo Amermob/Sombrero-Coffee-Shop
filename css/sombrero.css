@@ -368,12 +368,11 @@ header nav select:focus {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        width: 100%;
         right: 0;
         z-index: 2;
         padding: 10px;
         text-align: center;
-        background-color: rgba(0, 0, 0, 50%);
+        background-color: var(--main-background-color);
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -1077,6 +1076,13 @@ form ::placeholder {
 .group .socials {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width:650px) {
+    .group {
+        margin-left: 0px !important;
+
+    }
 }
 
 /* find us end */
