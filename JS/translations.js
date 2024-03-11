@@ -100,7 +100,7 @@ const translations = {
     workingHours: "working hours",
     StT: "saturday to thursday",
     friday: "friday",
-    reserved: "all rights reserved to sombrero 2020 ©",
+    reserved: "all rights reserved to sombrero  ©",
     //////////////////////////////////////////////////////// footer
   },
   ar: {
@@ -185,6 +185,6 @@ const translations = {
     workingHours: "ساعات العمل",
     StT: "من السبت الى الخميس",
     friday: "الجمعة",
-    reserved: "جميع الحقوق محفوظة لي سمبريرو 2020 ©",
+    reserved: "جميع الحقوق محفوظة لي سمبريرو  ©",
   },
 };
