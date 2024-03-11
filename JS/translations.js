@@ -100,7 +100,6 @@ const translations = {
     workingHours: "working hours",
     StT: "saturday to thursday",
     friday: "friday",
-    reserved: "all rights reserved to sombrero  ©",
     //////////////////////////////////////////////////////// footer
   },
   ar: {
