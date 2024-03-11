@@ -59,3 +59,5 @@ btnScroll.onclick = () => {
   });
 };
 
+let timeNow = new Date();
+document.getElementById("date").innerHTML = timeNow.getFullYear();
