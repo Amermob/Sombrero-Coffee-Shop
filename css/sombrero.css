@@ -1149,3 +1149,6 @@ h4 {
 .footer select:focus {
     outline: none;
 }
+#copyright {
+    font-size: 15px;
+}
