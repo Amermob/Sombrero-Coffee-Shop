@@ -184,6 +184,5 @@ const translations = {
     workingHours: "ساعات العمل",
     StT: "من السبت الى الخميس",
     friday: "الجمعة",
-    reserved: "جميع الحقوق محفوظة لي سمبريرو  ©",
   },
 };
