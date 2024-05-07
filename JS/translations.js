@@ -38,7 +38,7 @@ const translations = {
     brighten: "will brighten your day",
     sombrero: "Sombrero",
     whoWeAre: "who we are?",
-    sombrero_means: "sombrero is a latin word which means",
+    sombrero_means: "sombrero is a latin word which means straw hat",
     sombrero_suadi:
       "sombrero is a specialty saudi owned coffee shop which porvides only the best top quality of pure colombian coffee",
     /////////////////////////////////////////////////// landing
@@ -119,17 +119,17 @@ const translations = {
     SombreroLanding: "Sombrero",
     brighten: "will brighten your day",
     sombrero: "سومبريرو",
-    sombrero_means: "سومبريرو هي كلمة لاتينيه معناتها",
+    sombrero_means: "سومبريرو هي كلمة لاتينية معناها قبعة القش.",
+
     sombrero_suadi: "",
     whoWeAre: "من نحن؟",
-    sombrero_means: "سمبريرو هي كلمة لاتينية معناها",
     sombrero_suadi:
       "نستورد اجود انواع البن المختص من كولومبيا و نقوم بحمصها هنا في الرياض لنقدم لزبئننا كوب من القهوة عالية الجودة ليرتقي بذائقتهم المميزة",
     /////////////////////////////////////////////////// landing
 
     ///////////////////////////////////////////////////// events
     events: "فعاليات",
-    business: "للطلب يرجع تعبئة النموذج ",
+    business: "للطلب يرجئ  تعبئة النموذج ",
     Preferred: "يرجى اختيار الخيار المناسب لكم",
     ice: "لي طلب مكينة ايس كريم",
     coffeeMachine: "لي طلب مكينة القهوة",
@@ -155,7 +155,7 @@ const translations = {
     //////////////////////////////////////////////////// delivery
 
     deliveryOption: "طرق التوصيل",
-    sombreroPRovide: "سمبريرو توفر عددت خدمات لي التوصيل و هي",
+    sombreroPRovide: "سمبريرو توفر عدة خدمات لي التوصيل منها:",
 
     //////////////////////////////////////////////////// delivery
 
