@@ -61,3 +61,14 @@ btnScroll.onclick = () => {
 
 let timeNow = new Date();
 document.getElementById("date").innerHTML = timeNow.getFullYear();
+
+document.querySelector(".dots").addEventListener("click", function () {
+  document.querySelector("ul").classList.toggle("burger");
+  document
+    .querySelector(".dots span:first-child")
+    .classList.toggle("fristspan");
+  document
+    .querySelector(".dots span:nth-child(2)")
+    .classList.toggle("secondspan");
+  document.querySelector(".dots span:last-child").classList.toggle("lastspan");
+});
