@@ -38,9 +38,9 @@ const translations = {
     brighten: "will brighten your day",
     sombrero: "Sombrero",
     whoWeAre: "who we are?",
-    sombrero_means: "sombrero is a latin word which means straw hat",
+    sombrero_means: "sombrero is a latin word which means straw hat.",
     sombrero_suadi:
-      "sombrero is a specialty saudi owned coffee shop which porvides only the best top quality of pure colombian coffee",
+      "sombrero is a specialty saudi owned coffee shop which porvides only the best top quality of pure colombian coffee.",
     /////////////////////////////////////////////////// landing
 
     ///////////////////////////////////////////////////// events
